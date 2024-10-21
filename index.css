@@ -1,0 +1,285 @@
+html,body{
+    height: 100%;
+    margin: 0%;
+}
+#container{
+    display: flex;
+    height: 100%;
+}
+#div1{
+    background-color: rgba(35, 99, 45, 1);
+    height: 100%;
+    width: 18%;
+}
+#menu{
+    display: none;
+}
+#profile{
+    margin-top: 114px;
+    display: flex;
+    justify-content: center;
+}
+#pprofile{
+    height: 15vw;
+    width: 15vw;
+    border: 5px solid rgba(32, 138, 56, 1);
+    border-radius: 50%;
+}
+.info{
+    font-family: "Allerta", sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.info:hover{
+    color: rgb(0, 243, 0);
+    font-size: 1.25rem;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#div2{
+    height: 100%;
+    width: 82%;
+    background-image: linear-gradient(to bottom right, rgba(32, 138, 56, 1), white,rgba(32, 138, 56, 1));
+}
+.name{
+    height: 2vw;
+}
+.name, .lword{
+    font-size: 100px;
+    font-family: "Anton", sans-serif;
+    padding-top: 4vw;
+    padding-left: 2vw;
+}
+.lword{
+    color: rgba(35, 99, 45, 1);
+    padding-left: 0vw;
+}
+.yns, .gm{
+    font-family: "Archivo Narrow", sans-serif;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    padding-left: 2vw;
+    padding-bottom: 0px;
+}
+.gm{
+    color: rgba(35, 99, 45, 1);
+    padding-left: 0vw;
+}
+.sub{
+    font-family: "Bakbak One", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 2vw;
+    padding-top: 2.5vw;
+    padding-bottom: 1vw;
+}
+.subs{
+    font-family: "Bakbak One", sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-left: 2vw;
+}
+#icon1, #icon2, #icon3, #icon4{
+    font-size: 2.5rem;
+    padding-left: 1.5vw;
+    padding-top: 2vw;
+}
+#icon1:hover, #icon2:hover, #icon3:hover, #icon4:hover{
+    color: rgb(0, 243, 0);
+    cursor: pointer;
+}
+.ject{
+    color: rgba(35, 99, 45, 1);
+}
+
+@media (max-width: 1024px){
+
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    #div1{
+        width: 100%;
+        height: 28vw;
+    }
+    #div1 p{
+        display: none;
+        position: relative;
+    }
+    #menu{
+        width: 100%;
+        height: 6.5vw;
+        background-color: rgba(0, 0, 0, 0.473);
+        display: flex;
+    }
+    #btn{
+        font-size: 5vw;
+        margin-top: 0.7vw;
+        margin-left: 2vw;
+        color: rgb(0, 243, 0);
+    }
+    #div2{
+        width: 100%;
+        height: calc(100vh - 28vw);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #profile{
+        margin-top: 5vw;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+    }
+    #pprofile{
+        height: 30vw;
+        width: 30vw;
+    }
+    .name{
+        padding-top: 5vw;
+    }
+    .name, .lword{
+        font-size: 5rem;
+    }
+    .yns, .gm{
+        font-size: 1.7rem;
+        margin: 0%;
+    }
+    .sub{
+        margin-top: 5rem;
+        font-size: 2.2rem;
+        padding: 0%;
+    }
+    .subs{
+        font-size: 1.7rem;
+        margin: 0.5rem;
+    }
+    #icons {
+        margin-top: 10rem;
+    }
+    #icon1, #icon2, #icon3, #icon4{
+        font-size: 3.7rem;
+        padding-left: 4vw;
+    }
+}
+
+@media (max-width: 768px){
+
+    .name, .lword{
+        font-size: 4rem;
+        margin-top: 4rem;
+    }
+    .yns, .gm{
+        font-size: 1.5rem;
+        margin: 0%;
+    }
+    .sub{
+        font-size: 2rem;
+        padding: 0%;
+    }
+    .subs{
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+    #icons {
+        margin-top: 30vw;
+    }
+    #icon1, #icon2, #icon3, #icon4{
+        font-size: 3.5rem;
+        padding-left: 4vw;
+    }
+}
+
+@media (max-width: 650px){
+
+    #pprofile{
+        height: 28vw;
+        width: 28vw;
+    }
+    .name, .lword{
+        margin-top: 3rem;
+        font-size: 3rem;
+    }
+    .yns, .gm{
+        font-size: 1.3rem;
+        margin: 0%;
+    }
+    .sub{
+        font-size: 1.8rem;
+        padding: 0%;
+    }
+    .subs{
+        font-size: 1.3rem;
+        margin: 0.5rem;
+    }
+    #icons {
+        margin-top: 25vw;
+    }
+    #icon1, #icon2, #icon3, #icon4{
+        font-size: 3.3rem;
+    }
+}
+
+@media (max-width: 510px){
+
+    #pprofile{
+        top: 3rem;
+    }
+    .name, .lword{
+        margin-top: 2rem;
+        font-size: 8vw;
+    }
+    .yns, .gm{
+        font-size: 3.5vw;
+        margin: 0%;
+    }
+    .sub{
+        font-size: 5vw;
+        margin-top: 15vw;
+    }
+    .subs{
+        font-size: 4vw;
+        margin: 1vw;
+    }
+    #icons {
+        margin-top: 25vw;
+    }
+    #icon1, #icon2, #icon3, #icon4{
+        font-size: 12vw;
+    }
+}
+
+@media (max-width: 250px){
+
+    #pprofile{
+        height: 23vw;
+        width: 23vw;
+    }
+    .name, .lword{
+        margin-top: 0.7rem;
+        font-size: 8vw;
+    }
+    .yns, .gm{
+        font-size: 3.5vw;
+        padding-top: 1vw;
+    }
+    .sub{
+        font-size: 5vw;
+        margin-top: 15vw;
+    }
+    .subs{
+        font-size: 4vw;
+        margin: 1vw;
+    }
+    #icons {
+        margin-top: 25vw;
+    }
+    #icon1, #icon2, #icon3, #icon4{
+        font-size: 12vw;
+    }
+}
